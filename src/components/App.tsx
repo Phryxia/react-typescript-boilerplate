@@ -8,6 +8,7 @@ const cx = classnames.bind(styles)
 export default function App() {
   return (
     <div className={cx('container')}>
+      <div className={cx('nested')}>Hello~</div>
       <h1>TEST</h1>
     </div>
   )
