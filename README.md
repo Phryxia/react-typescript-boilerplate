@@ -1,10 +1,14 @@
-This is simple boilerplate for CSR only react project using typescript. Following features are installed and can be used without any settings.
+Latest update: 2022-02-14
 
-- Typescript
-- React 17
-- Post CSS & CSS Module
+This is simple boilerplate for CSR only react project using typescript. Following packages will be installed and can be used without any settings.
+
+- Yarn berry
+- Webpack 5 + esbuild-loader
+- TypeScript
+- PostCSS
 - Prettier
 - classnames
+- React 17
 - react-router-dom
 
-First you clone this, simply execute `npm install`. To open the dev server, execute `npm run dev`.
+First you clone this, simply execute `yarn install`. To open the dev server, execute `yarn dev`.
