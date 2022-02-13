@@ -7,8 +7,11 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        use: 'ts-loader',
-        exclude: /node_modules/,
+        loader: 'esbuild-loader',
+        options: {
+          loader: 'tsx',
+          target: 'es2020',
+        }
       },
       {
         test: /\.css$/,
@@ -37,4 +40,5 @@ module.exports = {
     port: 8000,
     hot: true,
   },
+  devtool: 'eval',
 }
