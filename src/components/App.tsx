@@ -1,4 +1,3 @@
-import React from 'react'
 import classnames from 'classnames/bind'
 import '@src/styles/global.css'
 import styles from '@src/styles/test.module.css'

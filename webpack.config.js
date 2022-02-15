@@ -1,5 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { ProvidePlugin } = require('webpack')
 
 module.exports = {
   entry: './src/index.tsx',
@@ -11,7 +12,7 @@ module.exports = {
         options: {
           loader: 'tsx',
           target: 'es2020',
-        }
+        },
       },
       {
         test: /\.css$/,
@@ -27,7 +28,10 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './public/index.html',
+      template: './src/index.html',
+    }),
+    new ProvidePlugin({
+      React: 'react',
     }),
   ],
   output: {
